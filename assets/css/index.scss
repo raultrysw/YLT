@@ -17,3 +17,15 @@
 .svg-inline--fa {
   cursor: pointer;
 }
+
+[contenteditable] {
+  border-bottom-width: 1px;
+  border-bottom-style: dashed;
+  &:hover, &:focus {
+    border-bottom-style: solid;
+  }
+  &:focus {
+    outline: 0;
+    border-color: red;
+  }
+}

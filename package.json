@@ -17,6 +17,7 @@
     "@fortawesome/fontawesome": "^1.1.5",
     "@fortawesome/fontawesome-free-solid": "^5.0.10",
     "@fortawesome/vue-fontawesome": "0.0.22",
+    "map-state-vmodel": "^0.2.6",
     "nuxt": "^1.0.0"
   },
   "devDependencies": {

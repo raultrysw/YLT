@@ -5,4 +5,10 @@ export const state = {
   title: 'Desarrollo de aplicaciones multiplataforma', subjects
 }
 
+export const mutations = {
+  setTitle (state, newTitle) {
+    state.title = newTitle
+  }
+}
+
 export const namespaced = true

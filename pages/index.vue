@@ -2,7 +2,8 @@
   <div class="app">
     <header class="app__header">
       <font-awesome icon="plus" />
-      <h1 class="app__title">{{title}}</h1>
+      <h1 class="app__title"><shadow-input :content="title" v-model="title" /></h1>
+      <!-- <input v-model="title" /> -->
     </header>
     <main class="app__content">
       <div class="app__subjects">
@@ -20,10 +21,12 @@
 <script>
 import Subject from '~/components/Subject.vue'
 import {mapState} from 'vuex'
+import {mapStateVModel} from 'map-state-vmodel'
 export default {
   components: {Subject},
   computed: {
-    ...mapState('course', ['subjects', 'title'])
+    ...mapStateVModel('course', ['title']),
+    ...mapState('course', ['subjects'])
   }
 }
 </script>
