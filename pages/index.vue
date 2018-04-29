@@ -8,7 +8,9 @@
       <div class="app__subjects">
         <h2>Listado de asignaturas</h2>
         <ul class="no-list subjects-list">
-          <li class="subject" v-for="(subject, index) in subjects" :key="index" is="subject" :subject="subject"></li>
+          <li class="subject__item" v-for="(subject, index) in subjects" :key="index">
+            <subject is="subject" :subject="subject" />
+          </li>
         </ul>
       </div>
     </main>
