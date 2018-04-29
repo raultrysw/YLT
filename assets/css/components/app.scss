@@ -23,11 +23,15 @@
       grid-gap: 1em;
     }
   }
-  &__units {
+  &__subject {
     position: absolute;
     left: $subject-container-width + 1%;
     top: 0px;
     right: 0px;
+    &__unit-list {
+      border-left: 2px solid;
+      padding-left: 2px !important;
+    }
     & + .app__subjects {
       position: absolute;
       top: 0px;

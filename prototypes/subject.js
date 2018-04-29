@@ -1,5 +1,4 @@
-export default function Subject({id = null, name, aka, units = [] }) {
-  this.id = id
+export default function Subject({name, aka, units = [] }) {
   this.name = name;
   this.aka = aka;
   this.units = units;

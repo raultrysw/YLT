@@ -13,6 +13,9 @@ export const mutations = {
     let subject = new Subject(newSubject);
     subject.id = state.subjects.legnth
     state.subjects.push(subject)
+  },
+  removeSubject (state, id) {
+    state.subjects.splice(id, 1)
   }
 }
 

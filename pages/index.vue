@@ -10,7 +10,7 @@
         <h2>Listado de asignaturas</h2>
         <ul class="no-list app__subjects-list">
           <li class="subject__item" v-for="(subject, index) in subjects" :key="index">
-            <subject is="subject" :subject="subject" />
+            <subject is="subject" :subject="subject" :id="index" />
           </li>
         </ul>
       </div>
