@@ -1,9 +1,10 @@
 <template>
   <div class="app__subject">
-    <h2>{{subject.name}}</h2>
+    <h2><nuxt-link to="/"><font-awesome icon="arrow-left" /></nuxt-link>
+      {{subject.name}} ({{subject.aka}})</h2>
     <p>
-      <nuxt-link :to="linkToSubject + '/edit/'">Editar</nuxt-link>
-      <nuxt-link :to="linkToSubject + '/remove/'">Eliminar</nuxt-link>
+      <nuxt-link :to="'edit'">Editar</nuxt-link>
+      <nuxt-link :to="'remove'">Eliminar</nuxt-link>
     </p>
     <h3>Lista de unidades</h3>
     <ul class="app__subject__unit-list no-list">

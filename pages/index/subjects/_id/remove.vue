@@ -27,7 +27,7 @@ export default {
       return this.subject.name + ' - ' + this.subject.aka
     },
     urlCb () {
-      return '/subjects/' + this.$route.params.id
+      return '/subjects/' + this.$route.params.id + '/'
     }
   },
   methods: {

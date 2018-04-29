@@ -16,6 +16,10 @@ export const mutations = {
   },
   removeSubject (state, id) {
     state.subjects.splice(id, 1)
+  },
+  replaceSubject (state, {id, subject}) {
+    state.subjects[id].name = subject.name;
+    state.subjects[id].aka = subject.aka
   }
 }
 
