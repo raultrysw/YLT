@@ -1,5 +1,10 @@
 # ylt
 
+
+## errors
+- [ ] El popup no se quita al darle al mas
+
+
 > Nuxt.js project
 
 ## Build Setup

@@ -8,6 +8,9 @@ export const state = {
 export const mutations = {
   setTitle (state, newTitle) {
     state.title = newTitle
+  },
+  pushSubject (state, newSubject) {
+    state.subjects.push(newSubject)
   }
 }
 

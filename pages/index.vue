@@ -1,7 +1,7 @@
 <template>
   <div class="app">
     <header class="app__header">
-      <font-awesome icon="plus" />
+      <popup-add-subject />
       <h1 class="app__title"><shadow-input :content="title" v-model="title" /></h1>
       <!-- <input v-model="title" /> -->
     </header>
@@ -22,8 +22,10 @@
 import Subject from '~/components/Subject.vue'
 import {mapState} from 'vuex'
 import {mapStateVModel} from 'map-state-vmodel'
+import PopupAddSubject from '~/components/popup-add-subject.vue'
+
 export default {
-  components: {Subject},
+  components: {Subject, PopupAddSubject},
   computed: {
     ...mapStateVModel('course', ['title']),
     ...mapState('course', ['subjects'])

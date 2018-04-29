@@ -21,11 +21,31 @@
 [contenteditable] {
   border-bottom-width: 1px;
   border-bottom-style: dashed;
+  &:empty::before {
+    content: attr(data-placeholder);
+    color: grey;
+  }
   &:hover, &:focus {
     border-bottom-style: solid;
   }
   &:focus {
     outline: 0;
     border-color: red;
+  }
+}
+.popup {
+  & input[type=checkbox]:checked + &__content {
+    display: block;
+  }
+  &__content {
+    position: absolute;
+    background: white;
+    border: 1px solid;
+    border-radius: 25px;
+    padding: 1em;
+    z-index: 1000;
+    &.subject__adding {
+      top: $header-height;
+    }
   }
 }

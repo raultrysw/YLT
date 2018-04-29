@@ -1,0 +1,18 @@
+.input-control {
+  border: 1px;
+  padding: .2em;
+  display: block;
+  &__text,
+  &__box {
+    display: block;
+    font-size: 1.2em;
+  }
+  &__text {
+    font-size: 1.5em;
+  }
+  &__box {
+    width: 100%;
+    padding: .3em;
+    box-sizing: border-box;
+  }
+}

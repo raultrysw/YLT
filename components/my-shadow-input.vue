@@ -1,9 +1,9 @@
 <template>
-  <span ref="content" contenteditable="contenteditable" @keyup="sendUpdate">{{content}}</span>
+  <span ref="content" :data-placeholder="placeholder" contenteditable="contenteditable" @keyup="sendUpdate">{{content}}</span>
 </template>
 <script>
 export default {
-  props: ['content'],
+  props: ['content', 'placeholder'],
   methods: {
     sendUpdate(e) {
       this.$emit('input', e.target.innerText)
