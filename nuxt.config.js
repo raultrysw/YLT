@@ -13,6 +13,9 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
+  plugins: [
+    {src: '~/plugins/setup', ssr: false}
+  ],
   css: [
     '@/assets/css/index.scss'
   ],
