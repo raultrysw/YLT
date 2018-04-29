@@ -3,12 +3,12 @@
     <header class="app__header">
       <popup-add-subject />
       <h1 class="app__title"><shadow-input :content="title" v-model="title" /></h1>
-      <!-- <input v-model="title" /> -->
     </header>
     <main class="app__content">
+      <nuxt-child />
       <div class="app__subjects">
         <h2>Listado de asignaturas</h2>
-        <ul class="no-list subjects-list">
+        <ul class="no-list app__subjects-list">
           <li class="subject__item" v-for="(subject, index) in subjects" :key="index">
             <subject is="subject" :subject="subject" />
           </li>

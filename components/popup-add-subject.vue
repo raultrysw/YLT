@@ -22,11 +22,6 @@ export default {
       newSubject: { name: '', aka: '' }
     }
   },
-  mounted () {
-    document.addEventListener('click', () => {
-      this.addingSubject = false
-    })
-  },
   methods: {
     ...mapMutations('course', ['pushSubject']),
     createNewSubject () {

@@ -10,7 +10,9 @@ export const mutations = {
     state.title = newTitle
   },
   pushSubject (state, newSubject) {
-    state.subjects.push(newSubject)
+    let subject = new Subject(newSubject);
+    subject.id = state.subjects.legnth
+    state.subjects.push(subject)
   }
 }
 

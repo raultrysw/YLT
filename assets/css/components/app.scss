@@ -11,9 +11,39 @@
   }
   &__content {
     position: absolute;
-    top: calc(#{$header-height} + 10px);
+    top: $header-height;
     left: 10px;
     right: 10px;
     bottom: 10px;
+  }
+  &__subjects {
+    &-list {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-gap: 1em;
+    }
+  }
+  &__units {
+    position: absolute;
+    left: $subject-container-width + 1%;
+    top: 0px;
+    right: 0px;
+    & + .app__subjects {
+      position: absolute;
+      top: 0px;
+      bottom: 0px;
+      border-right: 1px solid;
+      left: 0px;
+      width: $subject-container-width;
+      & .app__subjects-list {
+        display: flex;
+        flex-direction: column;
+
+      }
+      & .subject__item {
+        width: 100%;
+        display: block;
+      }
+    }
   }
 }
