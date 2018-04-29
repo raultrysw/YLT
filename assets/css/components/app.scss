@@ -1,0 +1,19 @@
+.app {
+  &__header {
+    @extend .flex-horizontal;
+    @extend .cross-center;
+    position: absolute;
+    top: 0px;
+    height: $header-height;
+    border-bottom: 1px solid;
+    width: 100%;
+    padding: 0em .3em;
+  }
+  &__content {
+    position: absolute;
+    top: calc(#{$header-height} + 10px);
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+  }
+}
