@@ -1,2 +1,32 @@
 @import './app.scss';
 @import './forms.scss';
+
+.bottom-bar {
+  position: fixed;
+  bottom: 0px;
+  display: flex;
+  left: 50%;
+  background: lightgrey;
+  border: 1px solid;
+  border-bottom: none;
+  transform: translateX(-50%) translateY(65%);
+  color: rgba(0,0,0,0);
+  border-color: black;
+  transition: all .2s, color 0s;
+  &:hover {
+    transform: translateX(-50%) translateY(0%);
+    color: rgba(0, 0, 0, 1);
+  }
+  &__link {
+    display: inline-block;
+    color: inherit;
+    padding: .5em;
+    font-size: 1.3em;
+    text-decoration: none;
+    transition: all .2s;
+    &:hover {
+      background: grey;
+      color: white;
+    }
+  }
+}
