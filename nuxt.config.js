@@ -16,6 +16,9 @@ module.exports = {
   plugins: [
     {src: '~/plugins/setup', ssr: false}
   ],
+  router: {
+    middleware: 'root-redirection'
+  },
   css: [
     '@/assets/css/index.scss'
   ],
