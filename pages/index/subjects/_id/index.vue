@@ -5,6 +5,7 @@
     <p>
       <nuxt-link :to="'edit'">Editar</nuxt-link>
       <nuxt-link :to="'remove'">Eliminar</nuxt-link>
+      <nuxt-link :to="'addunit'">Añadir unidad</nuxt-link>
     </p>
     <h3>Lista de unidades</h3>
     <ul class="app__subject__unit-list no-list">
@@ -12,6 +13,7 @@
         <unit :unit="unit" />
       </li>
     </ul>
+    <nuxt-child />
   </div>
 </template>
 <script>

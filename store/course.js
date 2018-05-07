@@ -1,4 +1,5 @@
-import Subject from '~/prototypes/subject.js'
+import Subject from "~/prototypes/subject.js";
+import Unit from '~/prototypes/unit.js'
 import subjects from './test-content'
 
 export const state = {
@@ -20,6 +21,9 @@ export const mutations = {
   replaceSubject (state, {id, subject}) {
     state.subjects[id].name = subject.name;
     state.subjects[id].aka = subject.aka
+  },
+  addUnit (state, {id, unit}) {
+    state.subjects[id].units.push(new Unit(unit))
   }
 }
 
