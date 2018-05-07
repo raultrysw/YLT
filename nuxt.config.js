@@ -14,13 +14,14 @@ module.exports = {
     ]
   },
   plugins: [
-    {src: '~/plugins/setup', ssr: false}
+    {src: '~/plugins/setup', ssr: false},
+    {src: '~/plugins/vue-quill-editor.js', ssr: false}
   ],
   router: {
     middleware: 'root-redirection'
   },
   css: [
-    '@/assets/css/index.scss'
+    '@/assets/css/index.scss',
   ],
   /*
   ** Customize the progress bar color

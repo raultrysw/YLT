@@ -1,8 +1,19 @@
 import Subject from '~/prototypes/subject.js'
 import Unit from '~/prototypes/unit.js'
 
+
+let testUnitContent = [
+  {
+    type: 'note',
+    content: `
+      <p>Prueba para que funcion el <strong>quill editor</strong></p>
+    `
+  }
+]
+
+
 const units = [
-  new Unit({name: 'Acceso a ficheros'}),
+  new Unit({name: 'Acceso a ficheros', content: testUnitContent}),
   new Unit({name: 'JDBC'})
 ]
 

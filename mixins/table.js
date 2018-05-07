@@ -8,6 +8,10 @@ export default {
       let unit = this.subjects[query.subject].units[query.unit].name;
       let subject = this.subjects[query.subject].name;
       return { unit, subject };
+    },
+    content () {
+      const query = this.$route.query;
+      return this.subjects[query.subject].units[query.unit].content
     }
   }
 };

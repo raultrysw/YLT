@@ -1,6 +1,9 @@
 @import './variables.scss';
 @import './helper-classes.scss';
 @import './components/index.scss';
+@import '../../node_modules/quill/dist/quill.core.css';
+@import '../../node_modules/quill/dist/quill.snow.css';
+@import '../../node_modules/quill/dist/quill.bubble.css';
 
 *:not(ul):not(ol) {
   margin: 0px;
