@@ -5,11 +5,8 @@
 </template>
 
 <script>
+import tableMixin from '~/mixins/table.js'
 export default {
-  computed: {
-    mode() {
-      return this.$route.params.mode
-    }
-  }
+  mixins: [tableMixin]
 }
 </script>
